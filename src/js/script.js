@@ -29,12 +29,19 @@
 //console.log(red);
 
 
-const answer = [];
+//const answer = [];
 
-answer[0] = prompt('kak vashe imya?', '' );
-answer[1] = prompt('kak vashe imy111a?', '' );
-answer[2] = prompt('kak vashe imy222a?', '' );
+//answer[0] = prompt('kak vashe imya?', '' );
+//answer[1] = prompt('kak vashe imy111a?', '' );
+//answer[2] = prompt('kak vashe imy222a?', '' );
 
 
 
-document.write(answer);
+//document.write(answer);
+//=========================================
+const category = 'toys';
+
+console.log('http://someurl.com/' + category + '/' + '4');
+console.log(`http://someurl.com/${category}/4` );
+
+//=========================================
