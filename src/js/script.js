@@ -1,6 +1,5 @@
 "use strict";
 
-
 //let number = 5;
 //console.log(number);
 //========================================
@@ -44,30 +43,59 @@
 //console.log('http://someurl.com/' + category + '/' + '4');
 //console.log(`http://someurl.com/${category}/4` );
 
-//=========================================
+//==================================================================================
 
-const numberOfFilms = +prompt('сколько фильмов вы просмотрел?', '');
-
-const personalMovieDB = {
-	count: numberOfFilms,
-	movies: {},
-	actors: {},
-	genres: [],
-	privat: false, 
-};
-
-//console.log(personalMovieDB);
-
-const a = prompt('один из последних просмотренных фильмов ', ''),
-	b = prompt('оцените его оценкой', ''),
-	c = prompt('один из последних просмотренных фильмов ', ''),
-	d = prompt('оцените его оценкой', '');
-
-personalMovieDB.movies[a] = b;
-personalMovieDB.movies[c] = d;
-
-console.log(personalMovieDB);
+//if (4 !== 9) {
+//	console.log('ok');
+//} else {
+//	console.log('error');
+//}
 
 //=========================================
+
+//const number = 50;
+
+//if (number < 49) {
+//	console.log('small 49');
+//} else if ( number > 100 ) {
+//	console.log(' big 100 ');
+//} else if (number == 35) {
+//	console.log('number = 35');
+//}
+//else {
+//	console.log('Error');
+//}
+
+
+//(number === 50) ? console.log('ok') : console.log('don`t ok-ok');
+
+//===================================================================================
+
+let num = 50;
+
+//while (num <= 55) {
+//	console.log(num);
+//	num++;
+//}
+//------------------------------
+//do {
+//	console.log(num);
+//	num++;
+//}
+//while (num < 55);
+//------------------------------
+//for (let iterator = 1; iterator < 8; iterator++) {
+//	console.log(num);
+//	num++;
+//}
+	
+//------------------------------
+//for (let iterator = 1; iterator < 10; iterator++) {
+//	if (iterator === 8) {
+//		//break;
+//		continue;
+//	}
+//	console.log(iterator);
+//}
 //=========================================
 //=========================================
