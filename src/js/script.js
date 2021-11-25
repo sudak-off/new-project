@@ -38,10 +38,36 @@
 
 
 //document.write(answer);
+////=========================================
+//const category = 'toys';
+
+//console.log('http://someurl.com/' + category + '/' + '4');
+//console.log(`http://someurl.com/${category}/4` );
+
 //=========================================
-const category = 'toys';
 
-console.log('http://someurl.com/' + category + '/' + '4');
-console.log(`http://someurl.com/${category}/4` );
+const numberOfFilms = +prompt('сколько фильмов вы просмотрел?', '');
 
+const personalMovieDB = {
+	count: numberOfFilms,
+	movies: {},
+	actors: {},
+	genres: [],
+	privat: false, 
+};
+
+//console.log(personalMovieDB);
+
+const a = prompt('один из последних просмотренных фильмов ', ''),
+	b = prompt('оцените его оценкой', ''),
+	c = prompt('один из последних просмотренных фильмов ', ''),
+	d = prompt('оцените его оценкой', '');
+
+personalMovieDB.movies[a] = b;
+personalMovieDB.movies[c] = d;
+
+console.log(personalMovieDB);
+
+//=========================================
+//=========================================
 //=========================================
