@@ -69,9 +69,9 @@
 
 //(number === 50) ? console.log('ok') : console.log('don`t ok-ok');
 
-//===================================================================================
+//===============================    ЦИКЛЫ     ====================================================
 
-let num = 50;
+//let num = 50;
 
 //while (num <= 55) {
 //	console.log(num);
@@ -97,5 +97,52 @@ let num = 50;
 //	}
 //	console.log(iterator);
 //}
-//=========================================
+//====================     функции     =====================
+
+
+function showFirstMessage() {  // название: глаголом функции что делает 
+	console.log('Hello world');
+}
+showFirstMessage(); // вызов функции 
+//------------------------------
+function showFirstMessage(text) {  
+	console.log(text);
+}
+showFirstMessage('hello world'); 
+//------------------------------
+let randNum = 20; // глобальная пермеменная
+function showFirstMessage(text) {
+	randNum = 10; // локальная переменная 
+	console.log(text);
+}
+showFirstMessage('hello world');
+//------------------------------
+function calc(a, b) {  // функция декларирования 
+	return (a + b);
+	console.log('dead code'); // анричибл код детектед, после return последующий код не доступен 
+}
+console.log(calc(7,3));
+console.log(calc(11,5));
+console.log(calc(10,20));
+//------------------------------
+function ret() { // функция декларирования 
+	let newNumber = 50;
+	let nNumber = 40; // выведит 40 если (return newNumber,nNumber;)
+	
+	// 
+
+	return newNumber,nNumber;
+}
+
+const anotherNum = ret();
+console.log(anotherNum);
+//------------------------------
+const lagger = function () {  // функция экспрессен  
+	console.log('Hello');
+};
+lagger();
+//------------------------------
+const calc = (a, b) => a + b;       // функция стрелочная ( не имеет обработчика события, чаще встречается в обработчике событий ) 
+const calc = (a, b) => { return a + b }; // если  ф-ция в одну строчку можно опустить фигурные скобки 
+
 //=========================================
